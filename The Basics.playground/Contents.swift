@@ -96,6 +96,7 @@ volume
 // пример
 
 var fiveOptional: Int? = 5
+var threeOptional = "3"
 
 fiveOptional = nil
 
@@ -107,6 +108,18 @@ if fiveOptional == nil { // выражение "если"
 } else {
     print(fiveOptional!)// необходимо добавить (!)
 }
+
+// Optional binding
+
+var optionalBindThree: Int = 0
+
+if let three = Int(threeOptional) {
+    optionalBindThree = three
+} else {
+    print("threeOptional is nil")
+}
+
+optionalBindThree
 
 fiveOptional == nil ? print("fiveOptional is nil") : print(fiveOptional!) // с помощью тернарного оператора
 
