@@ -1,4 +1,5 @@
 import UIKit
+import CoreFoundation
 
 // MARK: The Basics
 
@@ -161,3 +162,4 @@ var numInt = 42
 let sumDoub = Double(numInt) + douInt // Double
 
 // MARK:
+

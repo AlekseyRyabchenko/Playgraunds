@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 var aa = 5
@@ -9,6 +8,19 @@ let sums = aa + Int(bb)!
 
 print(sums)
 
+func getUser() -> [String] {
+    ["Ivan", "Ivanov"]
+}
+
+let user = getUser()
+print(user.first!)
+
+func getUser2() -> (first: String, second: String) {
+    (first: "Ivan", second: "Ivanov")
+}
+
+let user2 = getUser2()
+print(user2.first)
 
 /*
 
